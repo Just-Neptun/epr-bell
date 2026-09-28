@@ -1,0 +1,63 @@
+\documentclass[a4paper, 12pt]{scrartcl}
+
+\input{preamble}
+
+\usepackage{braket}
+
+\newcommand{\changed}[1]{\color{red}#1\color{black}}
+
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\difl}[1]{\,\symup{d}#1}
+\newcommand{\hilbert}{\symcal{H}}
+\newcommand{\A}{{\mathrm{A}}}
+\newcommand{\B}{{\mathrm{B}}}
+\newcommand{\up}[1]{\ket{+ \vec{#1}}}
+\newcommand{\down}[1]{\ket{- \vec{#1}}}
+\newcommand{\updown}[1]{\ket{s \vec{#1}}}
+\newcommand{\upbra}[1]{\bra{+ \vec{#1}}}
+\newcommand{\downbra}[1]{\bra{- \vec{#1}}}
+\newcommand{\updownbra}[1]{\bra{s \vec{#1}}}
+\newcommand{\CC}{\symbb{C}}
+\newcommand{\II}{\symbb{I}}
+\renewcommand{\vec}[1]{\symbf{#1}}
+\newcommand{\transpose}[1]{{#1}^{\symsf{T}}}
+\newcommand{\given}{\,|\,}
+\newcommand{\euler}{\symup{e}}
+\AtBeginDocument{\renewcommand{\imath}{\symup{i}}}
+
+% load file with bibliography
+\addbibresource{references.bib}
+
+\title{Locality in Quantum Theory}
+\subtitle{From the EPR-Argument to Bell's Theorem}
+\author{Justus Zimmermann}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    This paper traces the historical and mathematical development of locality in quantum theory.
+    We move from the 1935 Einstein-Podolsky-Rosen (EPR) argument regarding the incompleteness of quantum mechanics, through the introduction of Local Hidden Variable (LHV) theories, to John Bell's 1964 realization that LHV theories satisfy specific inequalities that quantum mechanics violates.
+    We conclude by reviewing the experimental verification of this violation and its implications for our understanding of the physical world.
+\end{abstract}
+
+\input{sections/1-introduction.tex}
+
+\input{sections/2-spin-singlet.tex}
+
+\input{sections/3-epr.tex}
+
+\input{sections/4-chsh-bell.tex}
+
+\input{sections/5-assumptions}
+
+\input{sections/6-experiments}
+
+\input{sections/7-conclusion}
+
+% references
+\printbibliography
+
+\end{document}

@@ -1,0 +1,54 @@
+% encoding
+\usepackage[utf8]{luainputenc}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage[onehalfspacing]{setspace}
+
+% font
+\setmainfont{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+%\setmonofont{Libertinus Serif}
+%\setmonofont[Scale=MatchLowercase]{Liberation Mono}
+
+% quotation marks
+\usepackage{csquotes}
+
+% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage[%
+  math-style = TeX,
+  bold-style = ISO,
+  nabla      = upright,
+  partial    = upright,
+]{unicode-math}
+\setmathfont{Libertinus Math}
+
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+\usepackage{color,xcolor}
+\definecolor{uhd}{RGB}{196,19,47} % the red color of Heidelberg University
+
+\usepackage[
+  colorlinks,
+  pdfpagelabels,
+  pdfstartview      = FitH,
+  bookmarksopen     = true,
+  bookmarksnumbered = true,
+  plainpages        = false,
+  hypertexnames     = false,
+  allcolors         = uhd,
+  breaklinks        = true
+]{hyperref}
+
+\usepackage[%
+  backend   = biber,
+  sorting   = none,
+  hyperref  = true,
+  natbib    = true,
+  citestyle = numeric-comp
+]{biblatex}
